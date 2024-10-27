@@ -8,7 +8,10 @@ Author: Matthew Sunner
 #>
 
 # Set the subscription context
-$SubscriptionId = "<SUBSCRIPTION_ID>"
+param (
+    [string]$SubscriptionId
+)
+
 az account set --subscription $SubscriptionId
 
 # Get all resource groups in the subscription
